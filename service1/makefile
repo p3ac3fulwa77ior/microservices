@@ -14,11 +14,11 @@ install: clean venv
 	 python setup.py develop
 
 launch: venv shutdown
-	 python  service1/movies.py &
+	 python  movies.py &
 	
 	 
 	
 
 shutdown:
-	ps -ef | grep "service1/movies.py" | grep -v grep | awk '{print $$2}' | xargs --no-run-if-empty kill
+	ps -ef | grep "movies.py" | grep -v grep | awk '{print $$2}' | xargs --no-run-if-empty kill
  
