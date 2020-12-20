@@ -1,7 +1,7 @@
 FROM craicerjack/nginx-flask
-WORKDIR /usr/src/app
+WORKDIR .
 
-COPY . .
+
 
 EXPOSE 6003
 
