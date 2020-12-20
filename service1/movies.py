@@ -6,7 +6,7 @@ import json
 
 app = Flask(__name__)
 
-with open("{}/movies.json".format(root_dir()), "r") as f:
+with open("{}/service1/movies.json".format(root_dir()), "r") as f:
     movies = json.load(f)
 
 
