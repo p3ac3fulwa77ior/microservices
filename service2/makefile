@@ -16,9 +16,9 @@ install: clean venv
 launch: venv shutdown
 	
 	
-	 python  service2/bookings.py &
+	 python  bookings.py &
 	
 
 shutdown:
 
-	ps -ef | grep "service2/bookings.py" | grep -v grep | awk '{print $$2}' | xargs --no-run-if-empty kill 
+	ps -ef | grep "bookings.py" | grep -v grep | awk '{print $$2}' | xargs --no-run-if-empty kill 
