@@ -1,9 +1,10 @@
 FROM craicerjack/nginx-flask
-WORKDIR .
+WORKDIR /usr/src/app
 
-
+COPY . .
 
 EXPOSE 6003
 
-RUN make install
-RUN make launch
+CMD ["python","setup.py"]
+CMD ["python","bookings.py &"]
+
