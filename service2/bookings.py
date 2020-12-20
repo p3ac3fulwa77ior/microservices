@@ -6,7 +6,7 @@ from werkzeug.exceptions import NotFound
 
 app = Flask(__name__)
 
-with open("{}/database/bookings.json".format(root_dir()), "r") as f:
+with open("{}/service2/bookings.json".format(root_dir()), "r") as f:
     bookings = json.load(f)
 
 
